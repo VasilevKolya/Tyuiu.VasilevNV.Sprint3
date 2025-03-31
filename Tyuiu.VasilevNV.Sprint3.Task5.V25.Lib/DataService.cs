@@ -18,7 +18,7 @@ namespace Tyuiu.VasilevNV.Sprint3.Task5.V25.Lib
                 }
             }
 
-            return totalSum;
+            return Math.Round(totalSum,3);
         }
     }
 }
