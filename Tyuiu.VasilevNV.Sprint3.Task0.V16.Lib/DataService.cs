@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint3;
+﻿using System.Net.Http.Headers;
+using tyuiu.cources.programming.interfaces.Sprint3;
 using Tyuiu.VasilevNV.Sprint3.Task0.V16.Lib;
 namespace Tyuiu.VasilevNV.Sprint3.Task0.V16.Lib
 {
@@ -6,14 +7,23 @@ namespace Tyuiu.VasilevNV.Sprint3.Task0.V16.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double sumSeries = 0;
-            int i;
-            for (i = startValue; i < stopValue; i++)
+            double product = 1.0;
+
+
+            if (startValue > stopValue)
+                throw new ArgumentException("Начальное значение не может быть больше конечного");
+
+            if (startValue <= 0)
+                throw new ArgumentException("Начальное значение должно быть положительным");
+
+
+            for (int k = startValue; k <= stopValue; k++)
             {
-                sumSeries =sumSeries + Math.Pow((double)value / i, 3);
+                double term = Math.Pow((double)value / k, 3);
+                product *= term;
             }
 
-            return Math.Round(sumSeries, 3);
+            return Math.Round(product, 3);
         }
     }
 }
