@@ -9,12 +9,12 @@ namespace Tyuiu.VasilevNV.Sprint3.Task1.V13.Test
         {
             DataService ds = new DataService();
 
-            double value = 5;
+            double value = 1.2;
             int startValue = 1;
-            int stopValue = 10;
+            int stopValue = 7;
 
             double res = ds.GetMultiplySeries(value, startValue, stopValue);
-            double wait = 57.552;
+            double wait = 164.845;
 
             Assert.AreEqual(wait,res);
         }

@@ -19,12 +19,24 @@ namespace Tyuiu.VasilevNV.Sprint3.Task1.V13.Lib
             int k = startValue;
             while (k <= stopValue)
             {
+
                 double term = Math.Pow(value / k, 3);
-                product *= term;
+
+                if (Math.Abs(product) < 1e-100 && term != 0)
+                {
+                    double logProduct = Math.Log10(product) + 3 * Math.Log10(value / k);
+                    product = Math.Pow(10, logProduct);
+                }
+                else
+                {
+                    product *= term;
+                }
+
                 k++;
             }
 
-            return Math.Round(product, 3);
+            return product;
         }
     }
 }
+        
