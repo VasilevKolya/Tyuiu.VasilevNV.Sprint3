@@ -22,6 +22,3 @@ namespace Tyuiu.VasilevNV.Sprint3.Task5.V25.Lib
         }
     }
 }
-        }
-    }
-}
