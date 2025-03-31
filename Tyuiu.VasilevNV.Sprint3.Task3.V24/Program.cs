@@ -1,4 +1,4 @@
-﻿using Tyuiu.VasilevNV.Sprint2.Task3.V24.Lib;
+﻿using Tyuiu.VasilevNV.Sprint3.Task3.V24.Lib;
 DataService ds = new DataService();
 Console.WriteLine("*Спринт #3 | Выполнил: Васильев Н. В. | ИСПБ-24-1                     *");
 Console.WriteLine("*************************************************************************");
@@ -25,3 +25,4 @@ Console.WriteLine(" РЕЗУЛЬТАТ:                                         
 Console.WriteLine("*************************************************************************");
 Console.WriteLine("Результат замены:" + ds.ReplaceCharInString(value, replaceable, replacement));
 Console.ReadKey();
+
