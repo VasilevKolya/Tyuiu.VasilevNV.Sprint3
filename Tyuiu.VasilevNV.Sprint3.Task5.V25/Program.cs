@@ -1,0 +1,33 @@
+﻿using Tyuiu.VasilevNV.Sprint3.Task5.V25.Lib;
+DataService ds = new DataService();
+Console.WriteLine("*Спринт #3 | Выполнил: Васильев Н. В. | ИСПБ-24-1                     *");
+Console.WriteLine("*************************************************************************");
+Console.WriteLine("* Спринт #3                                                             *");
+Console.WriteLine("* Тема: Вложенные циклы                                                 *");
+Console.WriteLine("* Задание #5                                                            *");
+Console.WriteLine("* Вариант #25                                                            *");
+Console.WriteLine("*  Выполнил: Васильев Н. В. | ИСПБ-24-1                                 *");
+Console.WriteLine("*************************************************************************");
+Console.WriteLine("*УСЛОВИЕ:                                                               *");
+Console.WriteLine("Написать программу, которая вычисляет выражение                         *");
+Console.WriteLine("*                                                                       *");
+int x = 5;
+int startValue1 = 1;
+int startValue2 = 1;
+int stopValue1 = 5;
+int stopValue2 = 10;
+Console.WriteLine("*************************************************************************");
+Console.WriteLine(" ИСХОДНЫЕ ДАННЫЕ:                                                       *");
+Console.WriteLine("*************************************************************************");
+Console.WriteLine("Переменная X:" + x);
+Console.WriteLine("Старт шага первой суммы:" + startValue1);
+Console.WriteLine("Конец шага первой суммы:" + stopValue1);
+Console.WriteLine("Старт шага второй суммы:" + startValue2);
+Console.WriteLine("Конец шага второй суммы:" + stopValue2);
+Console.WriteLine("*************************************************************************");
+Console.WriteLine(" РЕЗУЛЬТАТ:                                                             *");
+Console.WriteLine("*************************************************************************");
+
+Console.WriteLine("Сумма ряда = " + ds.GetSumSumSeries(x, startValue1, stopValue2, stopValue1, stopValue2));
+Console.ReadKey();
+
