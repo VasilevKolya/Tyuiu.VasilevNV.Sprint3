@@ -14,7 +14,7 @@ namespace Tyuiu.VasilevNV.Sprint3.Task5.V25.Lib
             {
                 for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    totalSum += Math.Pow(x, k) + Math.Cos(k);
+                    totalSum += Math.Pow(x, k) + Math.Cos(k); 
                 }
             }
 
