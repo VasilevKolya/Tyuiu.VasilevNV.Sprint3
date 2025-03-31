@@ -26,7 +26,7 @@ namespace Tyuiu.VasilevNV.Sprint3.Task1.V13.Lib
                 k++;
             }
 
-            return product;
+            return Math.Round(product,3);
         }
     }
 }
