@@ -1,16 +1,22 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint3;
 namespace Tyuiu.VasilevNV.Sprint3.Task2.V4.Lib
 {
-    public class DataService : ISprint3Task2V5
+    public class DataService : ISprint3Task2V4
     {
-        public double GetSumSeries(double value, int startValue, int stopValue)
+        public double GetMultiplySeries(int startValue, int stopValue)
         {
+            if (startValue > stopValue)
+                throw new ArgumentException("Начальное значение не может быть больше конечного");
+
+            if (startValue <= 0)
+                throw new ArgumentException("Начальное значение должно быть положительным");
+
             double sin1 = Math.Sin(1);
-            double denominator = Math.Pow(sin1, -7);
+            double denominator = Math.Pow(sin1, -7); // sin(1)^-7
             double product = 1.0;
             int k = startValue;
 
-            do
+                      do
             {
                 double term = Math.Pow(k / denominator, -2);
                 product *= term;
@@ -21,4 +27,7 @@ namespace Tyuiu.VasilevNV.Sprint3.Task2.V4.Lib
             return product;
         }
     }
-}   
+}
+        
+
+      

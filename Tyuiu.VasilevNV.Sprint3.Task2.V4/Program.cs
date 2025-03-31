@@ -24,5 +24,5 @@ Console.WriteLine("Конец шага:  " + stopValue);
 Console.WriteLine("*************************************************************************");
 Console.WriteLine(" РЕЗУЛЬТАТ:                                                             *");
 Console.WriteLine("*************************************************************************");
-Console.WriteLine("Сумма ряда = " + ds.GetSumSeries(value, startValue, stopValue));
+Console.WriteLine("Сумма ряда = " + ds.GetMultiplySeries( startValue, stopValue));
 Console.ReadKey();
