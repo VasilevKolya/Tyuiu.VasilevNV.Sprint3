@@ -10,10 +10,10 @@ namespace Tyuiu.VasilevNV.Sprint3.Task0.V16.Lib
             int i;
             for (i = startValue; i < stopValue; i++)
             {
-                sumSeries *= Math.Pow((double)value / i, 3);
+                sumSeries =sumSeries + Math.Pow((double)value / i, 3);
             }
 
-            return Math.Round(sumSeries, 6);
+            return Math.Round(sumSeries, 3);
         }
     }
 }

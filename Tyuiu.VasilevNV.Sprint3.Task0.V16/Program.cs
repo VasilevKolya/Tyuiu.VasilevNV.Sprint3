@@ -2,7 +2,7 @@
 DataService ds = new DataService();
 int value = 5;
 int startValue = 1;
-int stopValue = 10;
+int stopValue =6;
 
 Console.WriteLine("*Спринт #3 | Выполнил: Васильев Н. В. | ИСПБ-24-1                      *");
 Console.WriteLine("*************************************************************************");
