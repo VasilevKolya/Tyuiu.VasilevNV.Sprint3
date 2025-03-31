@@ -12,7 +12,7 @@ namespace Tyuiu.VasilevNV.Sprint3.Task2.V4.Lib
                 throw new ArgumentException("Начальное значение должно быть положительным");
 
             double sin1 = Math.Sin(1);
-            double denominator = Math.Pow(sin1, -7); // sin(1)^-7
+            double denominator = Math.Pow(sin1, -7); 
             double product = 1.0;
             int k = startValue;
 
@@ -24,7 +24,7 @@ namespace Tyuiu.VasilevNV.Sprint3.Task2.V4.Lib
             }
             while (k <= stopValue);
 
-            return product;
+            return Math.Round(product,3);
         }
     }
 }
